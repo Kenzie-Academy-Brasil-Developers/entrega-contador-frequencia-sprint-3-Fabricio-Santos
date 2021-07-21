@@ -3,7 +3,9 @@ button.addEventListener("click", function () {
   let typedText = document.getElementById("textInput").value;
   typedText = typedText.toLowerCase();
   typedText = typedText.replace(/[^a-z'\s]+/g, "");
+
   let letterCounts = {};
+
   for (let i = 0; i < typedText.length; i++) {
     let currentLetter = typedText[i];
 
@@ -12,6 +14,7 @@ button.addEventListener("click", function () {
     } else {
       letterCounts[currentLetter]++;
     }
+    words = typedText.split(/\s/);
   }
   for (let letter in letterCounts) {
     const span = document.createElement("span");

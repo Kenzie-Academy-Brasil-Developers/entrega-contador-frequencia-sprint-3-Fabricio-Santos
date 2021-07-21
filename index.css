@@ -1,17 +1,17 @@
 body {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  width: 500px;
-  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  margin: 5%;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 5%;
-    margin: 5%;
+
+    width: 500px;
+    align-items: center;
   }
 }
